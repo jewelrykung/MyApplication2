@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+
+    <ImageView
+        android:layout_width="@dimen/my_icon"
+        android:layout_height="@dimen/my_icon"
+        android:layout_margin="@dimen/my_margin"
+        app:srcCompat="@drawable/traffic_01"
+        android:id="@+id/imvIcon"
+        android:layout_weight="0" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0">
+
+        <TextView
+            android:text="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/h2"
+            android:id="@+id/txtTitleLiv" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/h3"
+            android:id="@+id/txtDetaiLiv" />
+    </LinearLayout>
+</LinearLayout>
