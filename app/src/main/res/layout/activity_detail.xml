@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg11"
+    tools:context="comsci.thanaset.myapplication.Detail">
+
+    <TextView
+
+        android:id="@+id/txtTitledetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ป้ายจราจร"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="60dp"
+        android:layout_margin="15dp"
+        />
+
+    <ImageView
+
+        android:id="@+id/imvImageDetail"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/traffic_01"
+        android:layout_below="@+id/txtTitledetail"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imvImageDetail"
+        android:layout_above="@+id/bntBack"
+        android:layout_margin="@dimen/my_margin"
+        android:background="@color/colorAccent"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <TextView
+                android:text="TextVdedewdiew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:id="@+id/txtDetailScroll" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bntBack"
+        android:text="Back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="clickback"
+        />
+
+</RelativeLayout>

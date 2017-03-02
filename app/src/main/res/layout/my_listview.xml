@@ -34,5 +34,6 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/h3"
             android:id="@+id/txtDetaiLiv" />
+
     </LinearLayout>
 </LinearLayout>
