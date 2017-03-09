@@ -57,8 +57,16 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
         //putextra การส่งข้อมูลข้าม activity
 
+    }
+    public  void oncick (View view){
+      Intent intent = new Intent(MainActivity.this,AboutMe.class);
+        startActivity(intent);
+
 
     }
+
+
+
 
 }//Main methot onClickMoreInfo
 
