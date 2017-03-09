@@ -19,25 +19,40 @@
 
         />
 
-    <Button
-        android:text="@string/MoreInfo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onClickMoreInfo (MainActivity)"
-        android:id="@+id/btnMoreInfo"
-        android:layout_alignParentBottom="true"
-
-        />
-
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/liveTraffic"
-        android:layout_below="@id/txtTitle"
-        android:layout_above="@id/btnMoreInfo"
+        android:layout_below="@+id/txtTitle"
+        android:layout_above="@+id/layButton"
         android:background="@color/colorAccent"
         android:layout_margin="@dimen/my_margin"
         />
+
+    <LinearLayout
+        android:id="@+id/layButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMoreInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_weight="1"
+            android:onClick="onClickMoreInfo (MainActivity)"
+
+            android:text="@string/MoreInfo" />
+
+        <Button
+            android:id="@+id/btnAboutMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/aboutMe" />
+    </LinearLayout>
 
 
 </RelativeLayout>

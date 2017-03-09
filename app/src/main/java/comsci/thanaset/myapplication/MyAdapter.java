@@ -44,7 +44,7 @@ public class MyAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {//รับจำนวนข้อมูลแล้วนำไปแสดงผลต่อบนหน้าเว็ป
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view =layoutInflater.inflate(R.layout.my_listview,parent,false);
+        View view =layoutInflater.inflate(R.layout.my_listview,parent,false);//ของmylistview
         //intitial view ผูกIDของ view กับตัวแปร เพื่อให้รู้จักกัน
 
         ImageView imageView = (ImageView) view.findViewById(R.id.imvIcon);
