@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public  void oncick (View view){
-      Intent intent = new Intent(MainActivity.this,AboutMe.class);
+      Intent intent = new Intent(MainActivity.this,TestLayout.class);
         startActivity(intent);
 
 

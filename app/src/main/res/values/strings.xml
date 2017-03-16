@@ -6,5 +6,8 @@
     <string name="aboutMe">About Me</string>
     <string name="textname">นาย ธนเศรษฐ์ ทองเอื้อสมบูรณ์ \n รหัสนศ.5711020660056\n หลักสูตร วิทยาการคอม</string>
     <string name="backkk">Back</string>
-    <string name="face">facebook thanaset thonguasomboon</string>
+    <string name="face"><b>facebook thanaset thonguasomboon</b></string>
+    <string name="name"><b>นาย ธนเศรษฐ์ ทองเอื้อสมบูรณ์ </b></string>
+    <string name="id"><b>รหัสนักศึกษา 5711020660056</b></string>
+    <string name="tel"><b>เบอร์ 0929942451</b></string>
 </resources>
