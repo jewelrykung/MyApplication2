@@ -1,10 +1,13 @@
 package comsci.thanaset.myapplication;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class TestLayout extends AppCompatActivity {
@@ -44,6 +47,17 @@ public class TestLayout extends AppCompatActivity {
                 
             }
         });
+        //phone on click
+        TextView Phone = (TextView) findViewById(R.id.txtTel);
+        Phone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent phoneIntent = new Intent(Intent.ACTION_DIAL);
+                phoneIntent.setData(Uri.parse("tel:0929942451"));
+                startActivity(phoneIntent);
+
+            }
+        });//ดักฟังว่ามีการคลิ๊กไหม
 
 
     }

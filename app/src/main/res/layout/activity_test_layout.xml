@@ -84,7 +84,7 @@
                 android:text="@string/face" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/txtTel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/my_margin"
